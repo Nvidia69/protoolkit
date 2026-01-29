@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer | ProToolkit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+        body {
+            background-color: #030712;
+            color: #f1f5f9;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.1) 0px, transparent 50%);
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-2xl w-full glass-panel p-8 md:p-12 rounded-3xl shadow-2xl">
+        <div class="flex items-center gap-3 mb-8">
+            <div class="w-10 h-10 bg-indigo-600/20 rounded-xl flex items-center justify-center border border-indigo-500/30">
+                <i data-lucide="alert-triangle" class="text-indigo-400 w-6 h-6"></i>
+            </div>
+            <h1 class="text-3xl font-extrabold text-white tracking-tight">Disclaimer</h1>
+        </div>
+
+        <div class="space-y-6 text-slate-400 leading-relaxed text-sm md:text-base">
+            <p>ProToolkit website par di gayi sabhi suvidhayen aur tools "as is" aadhar par uplabdha hain. Hum is baat ki koi guarantee nahi dete ki yeh tool hamesha 100% error-free ya uninterrupted rahega.</p>
+            
+            <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                <p class="text-slate-300 font-semibold mb-2">Local Processing Notice:</p>
+                Aapki files ki processing poori tarah se aapke browser mein hoti hai. Hum kisi bhi data loss, file corruption, ya anjane technical error ke liye zimmedar nahi hain.
+            </div>
+
+            <p>User ko salaah di jati hai ki wo apni zaroori files ka backup hamesha apne paas rakhein. Is tool ka upyog karke aap maante hain ki aap apne risk par ise use kar rahe hain.</p>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-white/10">
+            <a href="index.html" class="inline-flex items-center gap-2 text-indigo-400 hover:text-white font-bold transition-all group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                Back to Home App
+            </a>
+        </div>
+    </div>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

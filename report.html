@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Bug | ProToolkit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+        body {
+            background-color: #030712;
+            color: #f1f5f9;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: radial-gradient(at 0% 100%, rgba(239, 68, 68, 0.08) 0px, transparent 50%);
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-lg w-full glass-panel p-10 rounded-3xl shadow-2xl text-center">
+        <div class="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center border border-red-500/30 mx-auto mb-6">
+            <i data-lucide="bug" class="text-red-500 w-8 h-8"></i>
+        </div>
+        <h1 class="text-3xl font-extrabold text-white tracking-tight mb-4">Report a Bug</h1>
+        <p class="text-slate-400 text-sm mb-10">Kya koi tool sahi se kaam nahi kar raha? Humein detail mein batayein.</p>
+
+        <div class="space-y-5 text-left">
+            <div>
+                <label class="block text-[10px] font-bold text-slate-500 mb-2 uppercase tracking-widest">Problem Type</label>
+                <select class="w-full bg-slate-900 border border-white/10 p-3.5 rounded-xl outline-none focus:border-red-500 text-white appearance-none">
+                    <option>PDF Conversion Issue</option>
+                    <option>UI/Design Problem</option>
+                    <option>File Size Too Large</option>
+                    <option>Mobile Layout Bug</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-[10px] font-bold text-slate-500 mb-2 uppercase tracking-widest">Details</label>
+                <textarea rows="5" placeholder="Problem ko step-by-step batayein..." class="w-full bg-slate-900 border border-white/10 p-3.5 rounded-xl outline-none focus:border-red-500 text-white"></textarea>
+            </div>
+            <button class="w-full bg-red-600 hover:bg-red-500 py-4 rounded-xl font-bold text-white shadow-lg shadow-red-500/20 transition-all">Submit Report</button>
+        </div>
+
+        <div class="mt-10 pt-6 border-t border-white/10">
+            <a href="index.html" class="inline-flex items-center gap-2 text-slate-400 hover:text-white font-semibold transition-all group">
+                <i data-lucide="arrow-left" class="w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                Back to Home App
+            </a>
+        </div>
+    </div>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
